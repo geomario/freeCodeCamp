@@ -1,9 +1,43 @@
+<!-- This is my Survey Form in FreeCodeCamp -->
 <!DOCTYPE html>
-<style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css">
 
-h1 {
-  color: #33FFE6;
-}
+<style>
+  font-family: monospace;
+  }
+
+  .red_text {
+    color: red;
+  }
+
+  #title {
+    color: rgb(5, 5, 5);
+    background-color: rgb(69, 237, 217);
+    border-width: 05px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    text-align: center;
+    padding: 50px 20px 50px 20px;
+    margin: 20px;
+  }
+
+  #main-box {
+    background-color: rgb(241, 183, 11);
+    border-color: rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  #description {}
+
+  #name {}
+
+  #email {}
+
+  #number {}
 </style>
 
 <html>
@@ -13,45 +47,53 @@ h1 {
     <title>Survey form FreeCodeCamp </title>
   </head>
 
-  <h1 id="Title"> Survey Form (Data Science) </h1>
+  <div id="main-box">
+    <h1 id="title"> Survey Form (Data Science) </h1>
 
-  <body>
-    <h2><p id="description"> We would like to know more about you, can you help us? </p></h2>
+    <body>
+      <h2 class="red_text">
+        <p id="description"> We would like to know more about you, can you help us? </p>
+      </h2>
 
-    <form action="_bank" id="survey-form">
+      <form action="_bank" id="survey-form">
 
-      <input type="text" placeholder="Enter your name">
-      <input type="text" required placeholder="E-mail">
-      <input type="text" required placeholder="Phone Number">
+        <h3> Name </h3>
+        <input id="name" type="text" placeholder="Enter your name">
+        <h3> E-mail </h3>
+        <input id="email" type="text" required placeholder="E-mail">
 
-      <div>
-        <h2> Do you like our content? </h2>
-        <label for="yes">
-          <input id="yes" type="radio" name="yes-no-maybe" checked>Yes
-        </label>
-        <label for="no">
-          <input id="no" type="radio" name="yes-no-maybe">No
-        </label>
-        <label for="maybe">
-          <input id="maybe" type="radio" name="yes-no-maybe">Could be better
-        </label>
-      </div>
+        <input id="number" type="text" required placeholder="Phone Number">
 
-      <div>
-        <h2>What videos would you like to see first?</h2>
-        <label for="Tensor Flow">
-          <input id="Tensor Flow" , type="checkbox" name="courses" value="Tensor" checked> Tensor Flow
-        </label>
-        <label for="Matplotlib">
-          <input id="Matplotlib" , type="checkbox" name="courses" value="Matplot"> Matplotlib
-        </label>
-        <label for="Certifications">
-          <input id="Certifications" , type="checkbox" name="courses" value="Certification"> Certifications
-        </label>
-        <button type="submit"> Submit </button>
-      </div>
+        <div>
+          <h2> Do you like our content? </h2>
+          <label for="yes">
+            <input id="yes" type="radio" name="yes-no-maybe" checked>Yes
+            <!-- The name should be the same over the same group-->
+          </label>
+          <label for="no">
+            <input id="no" type="radio" name="yes-no-maybe">No
+          </label>
+          <label for="maybe">
+            <input id="maybe" type="radio" name="yes-no-maybe">Could be better
+          </label>
+        </div>
 
-    </form>
+        <div>
+          <h2 class="red_text">What videos would you like to see first?</h2>
+          <label for="Tensor Flow">
+            <input id="Tensor Flow" , type="checkbox" name="courses" value="Tensor" checked> Tensor Flow
+          </label>
+          <label for="Matplotlib">
+            <input id="Matplotlib" , type="checkbox" name="courses" value="Matplot"> Matplotlib
+          </label>
+          <label for="Certifications">
+            <input id="Certifications" , type="checkbox" name="courses" value="Certification"> Certifications
+          </label>
+          <button type="submit"> Submit </button>
+        </div>
+
+      </form>
+  </div>
 
   </body>
 

@@ -1,3 +1,8 @@
+<!-- This is my Survey Form in FreeCodeCamp -->
+<!DOCTYPE html>
+<link rel="preconnect"href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css">
+
 <style>
   html {
     font-size: 20px;
@@ -23,6 +28,17 @@
     margin-right: auto;
   }
 
+   .large-image{
+     width: 500px;
+  }
+
+  .thick-gray-border{
+    border-width: 10px;
+    border-style:groove;
+    border-color: gray;
+    border-radius: 50px; <!-- Possible with % -->
+  }
+
   figcaption {
     text-align: center;
   }
@@ -33,6 +49,10 @@
     position: relative;
     left: 30%;
   }
+
+  .purple-background{
+    background-color: blue;
+  }
 </style>
 
 
@@ -40,7 +60,7 @@
   <h1 id="title"> M.Sc Mario Ramirez </h1>
   <h2> Software Development, Data Science and Applied Geophysics </h2>
   <figure id="img-div">
-    <img id="image" src="https://s.gravatar.com/avatar/7cd7306f4d516e76e61cac4dfe5f33e5?s=80" alt="Profile Picture from Mario Ramirez" />
+    <img id="image" class="large-image thick-gray-border" src="https://s.gravatar.com/avatar/7cd7306f4d516e76e61cac4dfe5f33e5?s=80" alt="Profile Picture from Mario Ramirez" />
     <figcaption id="img-caption">
       Mario Alberto Ramirez Munoz
     </figcaption>
